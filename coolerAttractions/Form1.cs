@@ -49,30 +49,24 @@ namespace coolerAttractions
             }
             else
             {
-            // connection string  
-            try
-            {
-                // Query database  
-                var contactDetails =
-                   from c in database7DataSet.Attractions
-                   where c.Water == true
-                   orderby c.Name
-                   select c;
-                attractionsDataGridView.DataSource = contactDetails.AsDataView();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Water == true
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
 
             }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
         }
-
-     
     }
 }
