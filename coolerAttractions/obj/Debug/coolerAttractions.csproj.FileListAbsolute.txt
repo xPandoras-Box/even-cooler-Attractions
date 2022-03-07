@@ -8,3 +8,13 @@ C:\Users\fagal067\source\repos\coolerAttractions\coolerAttractions\obj\Debug\coo
 C:\Users\fagal067\source\repos\coolerAttractions\coolerAttractions\obj\Debug\coolerAttractions.csproj.GenerateResource.cache
 C:\Users\fagal067\source\repos\coolerAttractions\coolerAttractions\obj\Debug\coolerAttractions.exe
 C:\Users\fagal067\source\repos\coolerAttractions\coolerAttractions\obj\Debug\coolerAttractions.pdb
+C:\Users\fagal067\Documents\crackalackin\even cooler Attractions\even-cooler-Attractions\coolerAttractions\bin\Debug\Database7.accdb
+C:\Users\fagal067\Documents\crackalackin\even cooler Attractions\even-cooler-Attractions\coolerAttractions\bin\Debug\coolerAttractions.exe.config
+C:\Users\fagal067\Documents\crackalackin\even cooler Attractions\even-cooler-Attractions\coolerAttractions\bin\Debug\coolerAttractions.exe
+C:\Users\fagal067\Documents\crackalackin\even cooler Attractions\even-cooler-Attractions\coolerAttractions\bin\Debug\coolerAttractions.pdb
+C:\Users\fagal067\Documents\crackalackin\even cooler Attractions\even-cooler-Attractions\coolerAttractions\obj\Debug\coolerAttractions.csprojAssemblyReference.cache
+C:\Users\fagal067\Documents\crackalackin\even cooler Attractions\even-cooler-Attractions\coolerAttractions\obj\Debug\coolerAttractions.Form1.resources
+C:\Users\fagal067\Documents\crackalackin\even cooler Attractions\even-cooler-Attractions\coolerAttractions\obj\Debug\coolerAttractions.Properties.Resources.resources
+C:\Users\fagal067\Documents\crackalackin\even cooler Attractions\even-cooler-Attractions\coolerAttractions\obj\Debug\coolerAttractions.csproj.GenerateResource.cache
+C:\Users\fagal067\Documents\crackalackin\even cooler Attractions\even-cooler-Attractions\coolerAttractions\obj\Debug\coolerAttractions.exe
+C:\Users\fagal067\Documents\crackalackin\even cooler Attractions\even-cooler-Attractions\coolerAttractions\obj\Debug\coolerAttractions.pdb

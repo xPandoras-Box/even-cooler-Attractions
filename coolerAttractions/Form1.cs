@@ -37,10 +37,18 @@ namespace coolerAttractions
             // TODO: This line of code loads data into the 'database7DataSet.Attractions' table. You can move, or remove it, as needed.
             this.attractionsTableAdapter.Fill(this.database7DataSet.Attractions);
 
+
+
         }
 
         private void waterCheck_CheckedChanged(object sender, EventArgs e)
         {
+            if (waterCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
             // connection string  
             try
             {
@@ -56,6 +64,10 @@ namespace coolerAttractions
             {
                 MessageBox.Show(ex.Message);
             }
+
+            }
+
+
         }
 
      
