@@ -39,7 +39,7 @@ namespace coolerAttractions
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void waterCheck_CheckedChanged(object sender, EventArgs e)
         {
             // connection string  
             try
@@ -59,5 +59,7 @@ namespace coolerAttractions
 
 
         }
+
+     
     }
 }

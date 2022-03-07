@@ -29,45 +29,44 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.Label descriptionLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.waterCheck = new System.Windows.Forms.CheckBox();
+            this.loudCheck = new System.Windows.Forms.CheckBox();
+            this.slowCheck = new System.Windows.Forms.CheckBox();
+            this.thrilCheck = new System.Windows.Forms.CheckBox();
+            this.scaryCheck = new System.Windows.Forms.CheckBox();
+            this.kidsCheck = new System.Windows.Forms.CheckBox();
+            this.entertainCheck = new System.Windows.Forms.CheckBox();
+            this.dropCheck = new System.Windows.Forms.CheckBox();
+            this.trainCheck = new System.Windows.Forms.CheckBox();
+            this.boatCheck = new System.Windows.Forms.CheckBox();
+            this.transportCheck = new System.Windows.Forms.CheckBox();
+            this.exploreCheck = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.database7DataSet = new coolerAttractions.Database7DataSet();
             this.attractionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.attractionsTableAdapter = new coolerAttractions.Database7DataSetTableAdapters.AttractionsTableAdapter();
             this.tableAdapterManager = new coolerAttractions.Database7DataSetTableAdapters.TableAdapterManager();
             this.attractionsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.attractionsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.database7DataSet1 = new coolerAttractions.Database7DataSet1();
             this.attractionsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.attractionsTableAdapter1 = new coolerAttractions.Database7DataSet1TableAdapters.AttractionsTableAdapter();
             this.tableAdapterManager1 = new coolerAttractions.Database7DataSet1TableAdapters.TableAdapterManager();
             this.attractionsDataGridView = new System.Windows.Forms.DataGridView();
-            this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,6 +74,7 @@
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionTextBox = new System.Windows.Forms.TextBox();
             descriptionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database7DataSet)).BeginInit();
@@ -86,6 +86,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.attractionsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
+            // descriptionLabel
+            // 
+            descriptionLabel.AutoSize = true;
+            descriptionLabel.Location = new System.Drawing.Point(672, 358);
+            descriptionLabel.Name = "descriptionLabel";
+            descriptionLabel.Size = new System.Drawing.Size(63, 13);
+            descriptionLabel.TabIndex = 16;
+            descriptionLabel.Text = "Description:";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::coolerAttractions.Properties.Resources.unnamed;
@@ -96,126 +105,126 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // checkBox1
+            // waterCheck
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(60, 402);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(55, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Water";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.waterCheck.AutoSize = true;
+            this.waterCheck.Location = new System.Drawing.Point(60, 402);
+            this.waterCheck.Name = "waterCheck";
+            this.waterCheck.Size = new System.Drawing.Size(55, 17);
+            this.waterCheck.TabIndex = 1;
+            this.waterCheck.Text = "Water";
+            this.waterCheck.UseVisualStyleBackColor = true;
+            this.waterCheck.CheckedChanged += new System.EventHandler(this.waterCheck_CheckedChanged);
             // 
-            // checkBox2
+            // loudCheck
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(201, 402);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(50, 17);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "Loud";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.loudCheck.AutoSize = true;
+            this.loudCheck.Location = new System.Drawing.Point(201, 402);
+            this.loudCheck.Name = "loudCheck";
+            this.loudCheck.Size = new System.Drawing.Size(50, 17);
+            this.loudCheck.TabIndex = 2;
+            this.loudCheck.Text = "Loud";
+            this.loudCheck.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // slowCheck
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(322, 402);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(49, 17);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "Slow";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.slowCheck.AutoSize = true;
+            this.slowCheck.Location = new System.Drawing.Point(322, 402);
+            this.slowCheck.Name = "slowCheck";
+            this.slowCheck.Size = new System.Drawing.Size(49, 17);
+            this.slowCheck.TabIndex = 3;
+            this.slowCheck.Text = "Slow";
+            this.slowCheck.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // thrilCheck
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(431, 402);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(48, 17);
-            this.checkBox4.TabIndex = 4;
-            this.checkBox4.Text = "Thrill";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.thrilCheck.AutoSize = true;
+            this.thrilCheck.Location = new System.Drawing.Point(431, 402);
+            this.thrilCheck.Name = "thrilCheck";
+            this.thrilCheck.Size = new System.Drawing.Size(48, 17);
+            this.thrilCheck.TabIndex = 4;
+            this.thrilCheck.Text = "Thrill";
+            this.thrilCheck.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // scaryCheck
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(60, 457);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(53, 17);
-            this.checkBox5.TabIndex = 5;
-            this.checkBox5.Text = "Scary";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.scaryCheck.AutoSize = true;
+            this.scaryCheck.Location = new System.Drawing.Point(60, 457);
+            this.scaryCheck.Name = "scaryCheck";
+            this.scaryCheck.Size = new System.Drawing.Size(53, 17);
+            this.scaryCheck.TabIndex = 5;
+            this.scaryCheck.Text = "Scary";
+            this.scaryCheck.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // kidsCheck
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(201, 457);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(46, 17);
-            this.checkBox6.TabIndex = 6;
-            this.checkBox6.Text = "Kids";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.kidsCheck.AutoSize = true;
+            this.kidsCheck.Location = new System.Drawing.Point(201, 457);
+            this.kidsCheck.Name = "kidsCheck";
+            this.kidsCheck.Size = new System.Drawing.Size(46, 17);
+            this.kidsCheck.TabIndex = 6;
+            this.kidsCheck.Text = "Kids";
+            this.kidsCheck.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // entertainCheck
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(320, 457);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(91, 17);
-            this.checkBox7.TabIndex = 7;
-            this.checkBox7.Text = "Entertainment";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.entertainCheck.AutoSize = true;
+            this.entertainCheck.Location = new System.Drawing.Point(320, 457);
+            this.entertainCheck.Name = "entertainCheck";
+            this.entertainCheck.Size = new System.Drawing.Size(91, 17);
+            this.entertainCheck.TabIndex = 7;
+            this.entertainCheck.Text = "Entertainment";
+            this.entertainCheck.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // dropCheck
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(431, 457);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(49, 17);
-            this.checkBox8.TabIndex = 8;
-            this.checkBox8.Text = "Drop";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.dropCheck.AutoSize = true;
+            this.dropCheck.Location = new System.Drawing.Point(431, 457);
+            this.dropCheck.Name = "dropCheck";
+            this.dropCheck.Size = new System.Drawing.Size(49, 17);
+            this.dropCheck.TabIndex = 8;
+            this.dropCheck.Text = "Drop";
+            this.dropCheck.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // trainCheck
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(60, 507);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(50, 17);
-            this.checkBox9.TabIndex = 9;
-            this.checkBox9.Text = "Train";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.trainCheck.AutoSize = true;
+            this.trainCheck.Location = new System.Drawing.Point(60, 507);
+            this.trainCheck.Name = "trainCheck";
+            this.trainCheck.Size = new System.Drawing.Size(50, 17);
+            this.trainCheck.TabIndex = 9;
+            this.trainCheck.Text = "Train";
+            this.trainCheck.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // boatCheck
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(197, 507);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(48, 17);
-            this.checkBox10.TabIndex = 10;
-            this.checkBox10.Text = "Boat";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.boatCheck.AutoSize = true;
+            this.boatCheck.Location = new System.Drawing.Point(197, 507);
+            this.boatCheck.Name = "boatCheck";
+            this.boatCheck.Size = new System.Drawing.Size(48, 17);
+            this.boatCheck.TabIndex = 10;
+            this.boatCheck.Text = "Boat";
+            this.boatCheck.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // transportCheck
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(320, 507);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(94, 17);
-            this.checkBox11.TabIndex = 11;
-            this.checkBox11.Text = "Transportation";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.transportCheck.AutoSize = true;
+            this.transportCheck.Location = new System.Drawing.Point(320, 507);
+            this.transportCheck.Name = "transportCheck";
+            this.transportCheck.Size = new System.Drawing.Size(94, 17);
+            this.transportCheck.TabIndex = 11;
+            this.transportCheck.Text = "Transportation";
+            this.transportCheck.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // exploreCheck
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(431, 507);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(61, 17);
-            this.checkBox12.TabIndex = 12;
-            this.checkBox12.Text = "Explore";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.exploreCheck.AutoSize = true;
+            this.exploreCheck.Location = new System.Drawing.Point(431, 507);
+            this.exploreCheck.Name = "exploreCheck";
+            this.exploreCheck.Size = new System.Drawing.Size(61, 17);
+            this.exploreCheck.TabIndex = 12;
+            this.exploreCheck.Text = "Explore";
+            this.exploreCheck.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -277,6 +286,31 @@
             this.attractionsBindingNavigator.TabIndex = 14;
             this.attractionsBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -304,22 +338,16 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -327,7 +355,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -336,38 +364,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // attractionsBindingNavigatorSaveItem
             // 
             this.attractionsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.attractionsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("attractionsBindingNavigatorSaveItem.Image")));
             this.attractionsBindingNavigatorSaveItem.Name = "attractionsBindingNavigatorSaveItem";
-            this.attractionsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.attractionsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.attractionsBindingNavigatorSaveItem.Text = "Save Data";
             this.attractionsBindingNavigatorSaveItem.Click += new System.EventHandler(this.attractionsBindingNavigatorSaveItem_Click);
             // 
@@ -413,24 +423,6 @@
             this.attractionsDataGridView.ReadOnly = true;
             this.attractionsDataGridView.Size = new System.Drawing.Size(643, 220);
             this.attractionsDataGridView.TabIndex = 15;
-            // 
-            // descriptionLabel
-            // 
-            descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(672, 358);
-            descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(63, 13);
-            descriptionLabel.TabIndex = 16;
-            descriptionLabel.Text = "Description:";
-            // 
-            // descriptionTextBox
-            // 
-            this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.attractionsBindingSource1, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(741, 355);
-            this.descriptionTextBox.Multiline = true;
-            this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(356, 229);
-            this.descriptionTextBox.TabIndex = 17;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -481,6 +473,15 @@
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
+            // descriptionTextBox
+            // 
+            this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.attractionsBindingSource1, "Description", true));
+            this.descriptionTextBox.Location = new System.Drawing.Point(741, 355);
+            this.descriptionTextBox.Multiline = true;
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(356, 229);
+            this.descriptionTextBox.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -490,18 +491,18 @@
             this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.attractionsDataGridView);
             this.Controls.Add(this.attractionsBindingNavigator);
-            this.Controls.Add(this.checkBox12);
-            this.Controls.Add(this.checkBox11);
-            this.Controls.Add(this.checkBox10);
-            this.Controls.Add(this.checkBox9);
-            this.Controls.Add(this.checkBox8);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.exploreCheck);
+            this.Controls.Add(this.transportCheck);
+            this.Controls.Add(this.boatCheck);
+            this.Controls.Add(this.trainCheck);
+            this.Controls.Add(this.dropCheck);
+            this.Controls.Add(this.entertainCheck);
+            this.Controls.Add(this.kidsCheck);
+            this.Controls.Add(this.scaryCheck);
+            this.Controls.Add(this.thrilCheck);
+            this.Controls.Add(this.slowCheck);
+            this.Controls.Add(this.loudCheck);
+            this.Controls.Add(this.waterCheck);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -524,18 +525,18 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.CheckBox waterCheck;
+        private System.Windows.Forms.CheckBox loudCheck;
+        private System.Windows.Forms.CheckBox slowCheck;
+        private System.Windows.Forms.CheckBox thrilCheck;
+        private System.Windows.Forms.CheckBox scaryCheck;
+        private System.Windows.Forms.CheckBox kidsCheck;
+        private System.Windows.Forms.CheckBox entertainCheck;
+        private System.Windows.Forms.CheckBox dropCheck;
+        private System.Windows.Forms.CheckBox trainCheck;
+        private System.Windows.Forms.CheckBox boatCheck;
+        private System.Windows.Forms.CheckBox transportCheck;
+        private System.Windows.Forms.CheckBox exploreCheck;
         private System.Windows.Forms.GroupBox groupBox1;
         private Database7DataSet database7DataSet;
         private System.Windows.Forms.BindingSource attractionsBindingSource;
