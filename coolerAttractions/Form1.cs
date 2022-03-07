@@ -67,6 +67,10 @@ namespace coolerAttractions
 
             }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
         }
 
      
