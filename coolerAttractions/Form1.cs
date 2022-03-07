@@ -56,8 +56,6 @@ namespace coolerAttractions
             {
                 MessageBox.Show(ex.Message);
             }
-
-
         }
 
      
