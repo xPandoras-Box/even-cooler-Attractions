@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label descriptionLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.waterCheck = new System.Windows.Forms.CheckBox();
@@ -45,6 +44,7 @@
             this.transportCheck = new System.Windows.Forms.CheckBox();
             this.exploreCheck = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.spinCheck = new System.Windows.Forms.CheckBox();
             this.database7DataSet = new coolerAttractions.Database7DataSet();
             this.attractionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.attractionsTableAdapter = new coolerAttractions.Database7DataSetTableAdapters.AttractionsTableAdapter();
@@ -74,9 +74,6 @@
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionTextBox = new System.Windows.Forms.TextBox();
-            this.spinCheck = new System.Windows.Forms.CheckBox();
-            descriptionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database7DataSet)).BeginInit();
@@ -87,15 +84,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.attractionsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.attractionsDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // descriptionLabel
-            // 
-            descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(672, 358);
-            descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(63, 13);
-            descriptionLabel.TabIndex = 16;
-            descriptionLabel.Text = "Description:";
             // 
             // pictureBox1
             // 
@@ -250,6 +238,17 @@
             this.groupBox1.Text = "Categories";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // spinCheck
+            // 
+            this.spinCheck.AutoSize = true;
+            this.spinCheck.Location = new System.Drawing.Point(25, 196);
+            this.spinCheck.Name = "spinCheck";
+            this.spinCheck.Size = new System.Drawing.Size(47, 17);
+            this.spinCheck.TabIndex = 18;
+            this.spinCheck.Text = "Spin";
+            this.spinCheck.UseVisualStyleBackColor = true;
+            this.spinCheck.CheckedChanged += new System.EventHandler(this.spinCheck_CheckedChanged);
+            // 
             // database7DataSet
             // 
             this.database7DataSet.DataSetName = "Database7DataSet";
@@ -352,7 +351,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -487,33 +485,11 @@
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
-            // descriptionTextBox
-            // 
-            this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.attractionsBindingSource1, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(741, 355);
-            this.descriptionTextBox.Multiline = true;
-            this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(356, 229);
-            this.descriptionTextBox.TabIndex = 17;
-            // 
-            // spinCheck
-            // 
-            this.spinCheck.AutoSize = true;
-            this.spinCheck.Location = new System.Drawing.Point(25, 196);
-            this.spinCheck.Name = "spinCheck";
-            this.spinCheck.Size = new System.Drawing.Size(47, 17);
-            this.spinCheck.TabIndex = 18;
-            this.spinCheck.Text = "Spin";
-            this.spinCheck.UseVisualStyleBackColor = true;
-            this.spinCheck.CheckedChanged += new System.EventHandler(this.spinCheck_CheckedChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1250, 608);
-            this.Controls.Add(descriptionLabel);
-            this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.attractionsDataGridView);
             this.Controls.Add(this.attractionsBindingNavigator);
             this.Controls.Add(this.exploreCheck);
@@ -587,7 +563,6 @@
         private Database7DataSet1TableAdapters.AttractionsTableAdapter attractionsTableAdapter1;
         private Database7DataSet1TableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.DataGridView attractionsDataGridView;
-        private System.Windows.Forms.TextBox descriptionTextBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
