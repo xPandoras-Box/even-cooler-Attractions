@@ -75,8 +75,10 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
+            this.spinCheck = new System.Windows.Forms.CheckBox();
             descriptionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database7DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.attractionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.attractionsBindingNavigator)).BeginInit();
@@ -196,6 +198,7 @@
             this.trainCheck.TabIndex = 9;
             this.trainCheck.Text = "Train";
             this.trainCheck.UseVisualStyleBackColor = true;
+            this.trainCheck.CheckedChanged += new System.EventHandler(this.trainCheck_CheckedChanged);
             // 
             // boatCheck
             // 
@@ -229,9 +232,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.spinCheck);
             this.groupBox1.Location = new System.Drawing.Point(35, 355);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(493, 214);
+            this.groupBox1.Size = new System.Drawing.Size(493, 229);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categories";
@@ -483,6 +487,16 @@
             this.descriptionTextBox.Size = new System.Drawing.Size(356, 229);
             this.descriptionTextBox.TabIndex = 17;
             // 
+            // spinCheck
+            // 
+            this.spinCheck.AutoSize = true;
+            this.spinCheck.Location = new System.Drawing.Point(25, 196);
+            this.spinCheck.Name = "spinCheck";
+            this.spinCheck.Size = new System.Drawing.Size(47, 17);
+            this.spinCheck.TabIndex = 18;
+            this.spinCheck.Text = "Spin";
+            this.spinCheck.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -510,6 +524,8 @@
             this.Text = "coolerForm1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database7DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.attractionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.attractionsBindingNavigator)).EndInit();
@@ -569,6 +585,7 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.CheckBox spinCheck;
     }
 }
 

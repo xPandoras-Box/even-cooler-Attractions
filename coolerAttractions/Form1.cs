@@ -95,5 +95,32 @@ namespace coolerAttractions
 
             }
         }
+
+        private void trainCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (trainCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Category_2 == "Train"
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
     }
 }
