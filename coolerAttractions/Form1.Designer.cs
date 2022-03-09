@@ -73,7 +73,6 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database7DataSet)).BeginInit();
@@ -427,13 +426,12 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewCheckBoxColumn1,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
+            this.dataGridViewTextBoxColumn6});
             this.attractionsDataGridView.DataSource = this.attractionsBindingSource1;
             this.attractionsDataGridView.Location = new System.Drawing.Point(555, 12);
             this.attractionsDataGridView.Name = "attractionsDataGridView";
             this.attractionsDataGridView.ReadOnly = true;
-            this.attractionsDataGridView.Size = new System.Drawing.Size(643, 220);
+            this.attractionsDataGridView.Size = new System.Drawing.Size(643, 462);
             this.attractionsDataGridView.TabIndex = 15;
             // 
             // dataGridViewTextBoxColumn2
@@ -477,13 +475,6 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Height";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Description";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Description";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // Form1
             // 
@@ -563,14 +554,13 @@
         private Database7DataSet1TableAdapters.AttractionsTableAdapter attractionsTableAdapter1;
         private Database7DataSet1TableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.DataGridView attractionsDataGridView;
+        private System.Windows.Forms.CheckBox spinCheck;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.CheckBox spinCheck;
     }
 }
 
