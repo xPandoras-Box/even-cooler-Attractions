@@ -122,5 +122,275 @@ namespace coolerAttractions
 
             }
         }
+
+        private void spinCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (spinCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Category_1 == "Spin"
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        private void loudCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (loudCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Category_1 == "Loud"
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        private void kidsCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (kidsCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Category_1 == "Kids"
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        private void boatCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (boatCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Category_2 == "Boat"
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        private void slowCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (slowCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Category_2 == "Slow"
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        private void entertainCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (entertainCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Category_2 == "Entertainment"
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        private void transportCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (transportCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Category_1 == "Transportation"
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        private void thrilCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (thrilCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Category_2 == "Thrill"
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        private void dropCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (dropCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Category_2 == "Drop"
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        private void exploreCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (exploreCheck.Checked == false)
+            {
+                attractionsDataGridView.DataSource = attractionsBindingSource;
+            }
+            else
+            {
+                // connection string  
+                try
+                {
+                    // Query database  
+                    var contactDetails =
+                       from c in database7DataSet.Attractions
+                       where c.Category_2 == "Explore"
+                       orderby c.Name
+                       select c;
+                    attractionsDataGridView.DataSource = contactDetails.AsDataView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
     }
 }

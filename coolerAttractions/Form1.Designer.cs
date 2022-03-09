@@ -127,6 +127,7 @@
             this.loudCheck.TabIndex = 2;
             this.loudCheck.Text = "Loud";
             this.loudCheck.UseVisualStyleBackColor = true;
+            this.loudCheck.CheckedChanged += new System.EventHandler(this.loudCheck_CheckedChanged);
             // 
             // slowCheck
             // 
@@ -137,6 +138,7 @@
             this.slowCheck.TabIndex = 3;
             this.slowCheck.Text = "Slow";
             this.slowCheck.UseVisualStyleBackColor = true;
+            this.slowCheck.CheckedChanged += new System.EventHandler(this.slowCheck_CheckedChanged);
             // 
             // thrilCheck
             // 
@@ -147,6 +149,7 @@
             this.thrilCheck.TabIndex = 4;
             this.thrilCheck.Text = "Thrill";
             this.thrilCheck.UseVisualStyleBackColor = true;
+            this.thrilCheck.CheckedChanged += new System.EventHandler(this.thrilCheck_CheckedChanged);
             // 
             // scaryCheck
             // 
@@ -168,6 +171,7 @@
             this.kidsCheck.TabIndex = 6;
             this.kidsCheck.Text = "Kids";
             this.kidsCheck.UseVisualStyleBackColor = true;
+            this.kidsCheck.CheckedChanged += new System.EventHandler(this.kidsCheck_CheckedChanged);
             // 
             // entertainCheck
             // 
@@ -178,6 +182,7 @@
             this.entertainCheck.TabIndex = 7;
             this.entertainCheck.Text = "Entertainment";
             this.entertainCheck.UseVisualStyleBackColor = true;
+            this.entertainCheck.CheckedChanged += new System.EventHandler(this.entertainCheck_CheckedChanged);
             // 
             // dropCheck
             // 
@@ -188,6 +193,7 @@
             this.dropCheck.TabIndex = 8;
             this.dropCheck.Text = "Drop";
             this.dropCheck.UseVisualStyleBackColor = true;
+            this.dropCheck.CheckedChanged += new System.EventHandler(this.dropCheck_CheckedChanged);
             // 
             // trainCheck
             // 
@@ -209,6 +215,7 @@
             this.boatCheck.TabIndex = 10;
             this.boatCheck.Text = "Boat";
             this.boatCheck.UseVisualStyleBackColor = true;
+            this.boatCheck.CheckedChanged += new System.EventHandler(this.boatCheck_CheckedChanged);
             // 
             // transportCheck
             // 
@@ -219,6 +226,7 @@
             this.transportCheck.TabIndex = 11;
             this.transportCheck.Text = "Transportation";
             this.transportCheck.UseVisualStyleBackColor = true;
+            this.transportCheck.CheckedChanged += new System.EventHandler(this.transportCheck_CheckedChanged);
             // 
             // exploreCheck
             // 
@@ -229,6 +237,7 @@
             this.exploreCheck.TabIndex = 12;
             this.exploreCheck.Text = "Explore";
             this.exploreCheck.UseVisualStyleBackColor = true;
+            this.exploreCheck.CheckedChanged += new System.EventHandler(this.exploreCheck_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -496,6 +505,7 @@
             this.spinCheck.TabIndex = 18;
             this.spinCheck.Text = "Spin";
             this.spinCheck.UseVisualStyleBackColor = true;
+            this.spinCheck.CheckedChanged += new System.EventHandler(this.spinCheck_CheckedChanged);
             // 
             // Form1
             // 
