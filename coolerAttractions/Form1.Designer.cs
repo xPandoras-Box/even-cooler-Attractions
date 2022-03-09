@@ -155,6 +155,7 @@
             this.scaryCheck.TabIndex = 5;
             this.scaryCheck.Text = "Scary";
             this.scaryCheck.UseVisualStyleBackColor = true;
+            this.scaryCheck.CheckedChanged += new System.EventHandler(this.scaryCheck_CheckedChanged);
             // 
             // kidsCheck
             // 
