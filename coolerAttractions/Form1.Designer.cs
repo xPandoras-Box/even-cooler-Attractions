@@ -264,6 +264,7 @@
             this.attractionsBindingNavigator.BindingSource = this.attractionsBindingSource;
             this.attractionsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.attractionsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.attractionsBindingNavigator.Enabled = false;
             this.attractionsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
